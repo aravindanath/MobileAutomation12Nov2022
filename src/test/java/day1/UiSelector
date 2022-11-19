@@ -1,0 +1,11 @@
+new UiSelector().text("TEXT")
+new UiSelector().textStartsWith("TE")
+new UiSelector().textContains("TE")
+new UiSelector().textMatches(".*tex")  // Regex
+
+
+//className[@attribute='value']
+//className[@attribute='value' and @attribute='value']
+//className[@attribute='value' or @attribute='value']
+//className[contains(@attribute,'value')]
+//className[starts-with(@attribute,'value')]
