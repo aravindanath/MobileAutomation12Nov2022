@@ -30,6 +30,14 @@ public class Generics {
         }
         return productPrice;
     }
+
+
+    public static void addingProducts(List<WebElement> element){
+        System.out.println("Count: "+ element.size());
+        for(WebElement ref : element){
+            ref.click();
+               }
+    }
 }
 
 

@@ -37,11 +37,8 @@ public class GeneralStore_2 extends BaseClass{
         driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
 
         List<WebElement> addToCart = driver.findElements(By.xpath("//*[@text='ADD TO CART']"));
+        Generics.addingProducts(addToCart);
 
-        System.out.println("Total Addto Cart: "+ addToCart.size());
-        for(WebElement ref : addToCart){
-            ref.click();
-        }
 
        WebElement carticon  =  driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart"));
 
