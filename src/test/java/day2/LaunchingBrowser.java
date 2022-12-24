@@ -5,7 +5,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.remote.BrowserType;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -23,7 +23,7 @@ public class LaunchingBrowser {
     public void setup() throws MalformedURLException {
 
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-        desiredCapabilities.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.CHROME);
+
         desiredCapabilities.setCapability("platformName","Android");
         desiredCapabilities.setCapability("automationName","UiAutomator2");
         desiredCapabilities.setCapability("deviceName","emulator-5558");

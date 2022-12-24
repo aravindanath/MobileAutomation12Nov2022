@@ -23,7 +23,11 @@ public class LaunchYoutube {
         AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),desiredCapabilities);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-        driver.findElement(By.xpath("//android.widget.Button[@text='Allow']")).click();
+        try {
+            driver.findElement(By.xpath("//android.widget.Button[@text='Allow']")).click();
+        }catch (Exception e){
+
+        }
 
         driver.findElement(By.xpath("//android.widget.ImageView[@content-desc='Search']")).click();
 
