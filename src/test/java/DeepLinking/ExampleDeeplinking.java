@@ -21,7 +21,7 @@ public class ExampleDeeplinking {
         desiredCapabilities.setCapability("platformName","Android");
         desiredCapabilities.setCapability("automationName","UiAutomator2");
         desiredCapabilities.setCapability("deviceName","emulator-5556");
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),desiredCapabilities);
+        driver = new AndroidDriver(new URL("http://127.0.0.1:4724/wd/hub"),desiredCapabilities);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 

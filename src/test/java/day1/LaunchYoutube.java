@@ -20,7 +20,7 @@ public class LaunchYoutube {
         desiredCapabilities.setCapability("platformName","Android");
         desiredCapabilities.setCapability("automationName","UiAutomator2");
         desiredCapabilities.setCapability("deviceName","emulator-5556");
-        AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),desiredCapabilities);
+        AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4724/"),desiredCapabilities);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         try {
